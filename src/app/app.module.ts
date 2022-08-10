@@ -9,8 +9,11 @@ import { FooterComponent } from './themes/footer/footer.component';
 import { SidebarComponent } from './themes/sidebar/sidebar.component';
 import { HomeComponent } from './components/home/home.component';
 import { RecentSalesComponent } from './recent-sales/recent-sales.component';
-import { LoginComponent } from './auth-components/login/login.component';
 import { RouterModule } from '@angular/router';
+import { SignupComponent } from './auth-components/signup/signup.component';
+import { BlankComponent } from './auth-components/blank/blank.component';
+import { ErrorpageComponent } from './auth-components/errorpage/errorpage.component';
+import { MctComponent } from './components/mct/mct.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { RouterModule } from '@angular/router';
     SidebarComponent,
     HomeComponent,
     RecentSalesComponent,
-    LoginComponent,
+    SignupComponent,
+    BlankComponent,
+    ErrorpageComponent,
+    MctComponent,
   ],
   imports: [
     BrowserModule,

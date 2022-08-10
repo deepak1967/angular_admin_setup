@@ -1,19 +1,27 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './auth-components/login/login.component';
+import { BlankComponent } from './auth-components/blank/blank.component';
+import { ErrorpageComponent } from './auth-components/errorpage/errorpage.component';
 import { SigninComponent } from './auth-components/signin/signin.component';
+import { SignupComponent } from './auth-components/signup/signup.component';
 import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './themes/header/header.component';
 import { ThemeComponent } from './themes/theme/theme.component';
 
 const routes: Routes = [
   {
-    path:'',
+    path:'signin',
     component:SigninComponent,
   },
+  
   {
     path:'signup',
-    component:LoginComponent,
+    component:SignupComponent
   },
+  
+  
+  
+  
   {
     path: '',
     component: ThemeComponent,
@@ -22,8 +30,18 @@ const routes: Routes = [
         path: 'home',
         component: HomeComponent,
       },
+      
     ]
   },
+ 
+  {
+        path:'errorpage',
+        component:ErrorpageComponent,
+      },
+      {
+        path:'blank',
+        component:BlankComponent,
+      },
   
  
 ];
